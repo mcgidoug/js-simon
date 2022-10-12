@@ -86,3 +86,48 @@ function gameTurn() {
     }, 200);
   }
 }
+
+// functions for clicking color buttons
+// green
+function one() {
+  if (noise) {
+    let audio = document.getElementById("clip1");
+    audio.play();
+  }
+  noise = true;
+  topLeft.style.backgroundColor = "lightgreen";
+}
+// red
+function two() {
+  if (noise) {
+    let audio = document.getElementById("clip2");
+    audio.play();
+  }
+  noise = true;
+  topRight.style.backgroundColor = "tomato";
+}
+// yellow
+function three() {
+  if (noise) {
+    let audio = document.getElementById("clip3");
+    audio.play();
+  }
+  noise = true;
+  bottomLeft.style.backgroundColor = "yellow";
+}
+// blue
+function four() {
+  if (noise) {
+    let audio = document.getElementById("clip4");
+    audio.play();
+  }
+  noise = true;
+  bottomRight.style.backgroundColor = "lightskyblue";
+}
+
+function clearColor() {
+  topLeft.style.backgroundColor = "darkgreen";
+  topRight.style.backgroundColor = "darkred";
+  bottomLeft.style.backgroundColor = "goldenrod";
+  bottomRight.style.backgroundColor = "darkblue";
+}
